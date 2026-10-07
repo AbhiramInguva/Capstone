@@ -1,0 +1,12 @@
+# Core benchmark: AgentDojo provides the agent environments (email, calendar,
+# files, ...), the user tasks, the injection tasks, and the built-in defenses.
+# Pinned so every teammate runs the exact same benchmark code.
+agentdojo==0.1.35
+
+# Loads API keys from the local .env file (never commit .env).
+python-dotenv>=1.0.1
+
+# NOTE: AgentDojo already pulls in the OpenAI, Anthropic, Google and Cohere
+# SDKs, so no extra provider packages are needed here.
+# We deliberately do NOT install the "agentdojo[transformers]" extra (torch +
+# a local prompt-injection classifier); the team is API-only.

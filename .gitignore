@@ -1,0 +1,24 @@
+# --- Secrets: never commit real API keys ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Run outputs (can be large / contain model transcripts) ---
+logs/
+runs/
+results/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
